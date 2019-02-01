@@ -1,0 +1,41 @@
+#original 
+Name;			Address;							Telephone
+Donna Smith;		126 Orr Corner Suite 857\nEast Michael, LA 54411;		906-918-6560
+Aaron Osborn;		6965 Miller Station Suite 485\nNorth Michelle, KS 64364;	815.039.3661x42816
+Jennifer Barnett;	8749 Alicia Vista Apt. 288\nLake Victoriaberg, TN 51094;	397-796-4842x451
+Joshua Bryan;		20116 Stephanie Stravenue\nWhitneytown, IA 87358;		(380)074-6173
+Andrea Jones;		558 Melissa Keys Apt. 588\nNorth Teresahaven, WA 63411;		+57(8)7795396386
+Victor Williams;	725 Gloria Views Suite 628\nEast Scott, IN 38095;		768.708.3411x954
+
+# with newline="" and delimiter(;)
+{'Telephone': '906-918-6560', 		'Name': 'Donna Smith', 		'Address': '126 Orr Corner Suite 857\\nEast Michael, LA 54411'}
+{'Telephone': '815.039.3661x42816', 	'Name': 'Aaron Osborn', 	'Address': '6965 Miller Station Suite 485\\nNorth Michelle, KS 64364'}
+{'Telephone': '397-796-4842x451', 	'Name': 'Jennifer Barnett', 	'Address': '8749 Alicia Vista Apt. 288\\nLake Victoriaberg, TN 51094'}
+{'Telephone': '(380)074-6173', 		'Name': 'Joshua Bryan', 	'Address': '20116 Stephanie Stravenue\\nWhitneytown, IA 87358'}
+{'Telephone': '+57(8)7795396386', 	'Name': 'Andrea Jones', 	'Address': '558 Melissa Keys Apt. 588\\nNorth Teresahaven, WA 63411'}
+{'Telephone': '768.708.3411x954', 	'Name': 'Victor Williams', 	'Address': '725 Gloria Views Suite 628\\nEast Scott, IN 38095'}
+
+# delimiter(;)
+{'Address': '126 Orr Corner Suite 857\\nEast Michael, LA 54411', 	'Name': 'Donna Smith', 		'Telephone': '906-918-6560'}
+{'Address': '6965 Miller Station Suite 485\\nNorth Michelle, KS 64364', 'Name': 'Aaron Osborn', 	'Telephone': '815.039.3661x42816'}
+{'Address': '8749 Alicia Vista Apt. 288\\nLake Victoriaberg, TN 51094', 'Name': 'Jennifer Barnett', 	'Telephone': '397-796-4842x451'}
+{'Address': '20116 Stephanie Stravenue\\nWhitneytown, IA 87358', 	'Name': 'Joshua Bryan', 	'Telephone': '(380)074-6173'}
+{'Address': '558 Melissa Keys Apt. 588\\nNorth Teresahaven, WA 63411', 	'Name': 'Andrea Jones', 	'Telephone': '+57(8)7795396386'}
+{'Address': '725 Gloria Views Suite 628\\nEast Scott, IN 38095', 	'Name': 'Victor Williams', 	'Telephone': '768.708.3411x954'}
+
+#with newline=""
+{None: [' LA 54411;906-918-6560'], 		'Name;Address;Telephone': 'Donna Smith;126 Orr Corner Suite 857\\nEast Michael'}
+{None: [' KS 64364;815.039.3661x42816'], 	'Name;Address;Telephone': 'Aaron Osborn;6965 Miller Station Suite 485\\nNorth Michelle'}
+{None: [' TN 51094;397-796-4842x451'], 		'Name;Address;Telephone': 'Jennifer Barnett;8749 Alicia Vista Apt. 288\\nLake Victoriaberg'}
+{None: [' IA 87358;(380)074-6173'], 		'Name;Address;Telephone': 'Joshua Bryan;20116 Stephanie Stravenue\\nWhitneytown'}
+{None: [' WA 63411;+57(8)7795396386'], 		'Name;Address;Telephone': 'Andrea Jones;558 Melissa Keys Apt. 588\\nNorth Teresahaven'}
+{None: [' IN 38095;768.708.3411x954'], 		'Name;Address;Telephone': 'Victor Williams;725 Gloria Views Suite 628\\nEast Scott'}
+
+#with none
+{'Name;Address;Telephone': 'Donna Smith;126 Orr Corner Suite 857\\nEast Michael', 		None: [' LA 54411;906-918-6560']}
+{'Name;Address;Telephone': 'Aaron Osborn;6965 Miller Station Suite 485\\nNorth Michelle', 	None: [' KS 64364;815.039.3661x42816']}
+{'Name;Address;Telephone': 'Jennifer Barnett;8749 Alicia Vista Apt. 288\\nLake Victoriaberg', 	None: [' TN 51094;397-796-4842x451']}
+{'Name;Address;Telephone': 'Joshua Bryan;20116 Stephanie Stravenue\\nWhitneytown', 		None: [' IA 87358;(380)074-6173']}
+{'Name;Address;Telephone': 'Andrea Jones;558 Melissa Keys Apt. 588\\nNorth Teresahaven', 	None: [' WA 63411;+57(8)7795396386']}
+{'Name;Address;Telephone': 'Victor Williams;725 Gloria Views Suite 628\\nEast Scott', 		None: [' IN 38095;768.708.3411x954']}
+
